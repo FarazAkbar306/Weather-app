@@ -6,26 +6,45 @@
 
 }
 body {
-  background-color: rgb(8, 6, 32); 
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #141E30, #243B55);
+
   height: 100vh;
-  width: 100vw;
-  display: grid; 
-  grid-template-columns: 100px 1fr 1fr;
-  /* column-gap: 10px; */
-  gap: 10px;
-  /* row-gap: 10px; */
+  padding: 20px;
 }
+
+
+/* Main Conainer */
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.middle-section, 
+.right-section, 
 .left-section {
-  /* width: 100px; */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Left Section */
+.left-section {
   display: flex; 
   flex-direction: column;
   align-items: center;
-  background-color: rgb(40, 51, 83); 
+  /* background-color: rgb(40, 51, 83);  */
   height: 100%;
   border-radius: 15px;
-  /* margin-top: 15px; */
-  /* margin-bottom: 10px; */
 }
 .left-section .side-button-logo {
   margin-top: 20px;
@@ -76,6 +95,7 @@ body {
   padding: 10px;
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }
 
 .search-bar {
@@ -87,7 +107,7 @@ body {
   border-radius: 10px;
   padding-left: 10px;
   border: none; 
-  background-color: rgb(40, 51, 83);
+  /* background-color: rgb(40, 51, 83); */
 }
 
 .search-bar input::placeholder {
@@ -138,7 +158,7 @@ body {
 
 .daily-forecast {
   margin-top: 10px;
-  background-color: rgb(40, 51, 83);
+  /* background-color: rgb(40, 51, 83); */
   display: flex; 
   flex-direction: column;
   border-radius: 10px;
@@ -188,7 +208,7 @@ body {
 .air-conditions {
   display: flex; 
   flex-direction: column; 
-  background-color: rgb(40, 51, 83);
+  /* background-color: rgb(40, 51, 83); */
   margin-top: 10px;
   border-radius: 10px;
   color: grey;
@@ -220,13 +240,11 @@ body {
 .air-conditions .main-air-condition {
   display: grid; 
   grid-template-columns: 1fr 1fr;
-  grid-column: 2;
-  grid-row: 2;
+  /* grid-column: 2;
+  grid-row: 2; */
   gap: 5px;
   align-items: center;
-  /* justify-content: space-evenly; */
 }
-
 
 .main-air-condition .real-feel, 
 .wind, 
@@ -236,7 +254,6 @@ body {
   display: flex; 
   flex-direction: column; 
 }
-
 
 .upper {
   display: flex; 
@@ -262,7 +279,7 @@ body {
 
 /* Right Section */
 .right-section {
-  background-color: rgb(40, 51, 83);
+  /* background-color: rgb(40, 51, 83); */
   border-radius: 10px;
   padding: 10px;
   color: grey; 
@@ -293,3 +310,7 @@ body {
 .right-section .last {
   border: none; 
 }
+
+
+
+
